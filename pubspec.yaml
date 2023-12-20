@@ -1,0 +1,191 @@
+name: meals_app
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  transparent_image: ^2.0.1
+  flutter_riverpod: ^2.4.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/Braciole.webp
+    - assets/images/Brocolli-beef-noodles.jpg
+    - assets/images/Candied-Almond-Affogato.webp
+    - assets/images/CauliflowerPakoras.webp
+    - assets/images/Chicken-Biriyani.jpg
+    - assets/images/Chicken-Flautas.jpg
+    - assets/images/chicken-tikka-masala.webp
+    - assets/images/Classic-Hamburger.jpg
+    - assets/images/Creamy-Caramel-Flan.jpg
+    - assets/images/Delicious-Orange-Mousse.jpg
+    - assets/images/Dumpling.webp
+    - assets/images/Kartoffelpuffer.webp
+    - assets/images/Kung-Pao-Chicken.jpg
+    - assets/images/Mexican-Style-Chili-Burgers.webp
+    - assets/images/Momos.jpg
+    - assets/images/Nacho-Burgers.webp
+    - assets/images/Pancakes-and-Waffles.jpg
+    - assets/images/Salad-of-Pink-Radicchio.webp
+    - assets/images/Salad-with-Smoked-Salmon.jpg
+    - assets/images/Spaghetti-with-Tomato-Sauce.jpg
+    - assets/images/Wonton-Soup.jpg
+    - assets/images/Panzanella.jpg
+    - assets/images/Spicy-Sausage-Rigatoni.jpg
+    - assets/images/italian-rainbow-cookies.jpg
+    - assets/images/Italian-Sausage-pasta.jpg
+    - assets/images/italian-pizza.jpg
+    - assets/images/stracciatella.webp
+    - assets/images/Cheesburger.webp
+    - assets/images/bbq-steak-sandwich.webp
+    - assets/images/korean-burger.webp
+    - assets/images/carrot-burger.webp
+    - assets/images/Brazil-grill-burger.webp
+    - assets/images/Ultimate-Veggie-Burgers.webp
+    - assets/images/Mapo-Tofu.jpg
+    - assets/images/chow-mein.webp
+    - assets/images/chinese-barbeque-pork-char-siu.jpg
+    - assets/images/hot-pot.webp
+    - assets/images/zhajiangmian.webp
+    - assets/images/tanghulu.webp
+    - assets/images/korma.webp
+    - assets/images/tandoori-chicken.webp
+    - assets/images/pav-bhaji.jpg
+    - assets/images/palak-paneer.webp
+    - assets/images/masala-dosa.webp
+    - assets/images/gulab-jamun.webp
+    - assets/images/mixed-nut-milk-panna.webp
+    - assets/images/pepperoni-pizza.jpg
+    - assets/images/paneer-pizza.webp
+    - assets/images/mushroom-pizza.webp
+    - assets/images/chicken-pizza.webp
+    - assets/images/cheese-pizza.jpg
+    - assets/images/Bun-Pizza.jpg
+    - assets/images/best-veggie-pizza-recipe.webp
+    - assets/images/sheet-pizza.webp
+    - assets/images/Bacon-Breakfast-Pizza.webp
+    - assets/images/sashimi.webp
+    - assets/images/unagi--no-kabayaki.webp
+    - assets/images/curry-rice.webp
+    - assets/images/miso soup.webp
+    - assets/images/natto-fermented-soybeans.webp
+    - assets/images/ramen.webp
+    - assets/images/udon.webp
+    - assets/images/tempura.webp
+    - assets/images/Soba-Chilled-Noodles.webp
+    - assets/images/sush.webp
+    - assets/images/korean-chicken-skewers.jpg
+    - assets/images/Mixed-Onigiri-Rice-Ball.webp
+    - assets/images/korean-style-sushi.webp
+    - assets/images/korean-stew.webp
+    - assets/images/bibimbap.webp
+    - assets/images/bone-soup.webp
+    - assets/images/bulgogi.webp
+    - assets/images/Dalgona-Korean-Sponge-Candy.jpg
+    - assets/images/korean-fried-chicken.webp
+    - assets/images/Kimchi.webp
+    - assets/images/Classic-Tres-Leches-Cake.jpg
+    - assets/images/Homemade-Tortilla-Chips.jpg
+    - assets/images/Bacon-and-Egg-Chilaquiles.jpg
+    - assets/images/mexican-corn-salad.jpg
+    - assets/images/Simple-Chicken-Enchiladas.jpg
+    - assets/images/Pork-Tacos-with-Mango-Salsa.jpg
+    - assets/images/Carne-Guisada.jpg
+    - assets/images/Fresh-Lime-Margaritas.jpg
+    - assets/images/schweinebraten.webp
+    - assets/images/german-style-pretzels.webp
+    - assets/images/Brasied-Red-Cabbage.webp
+    - assets/images/gluten-free-vollkornbrot.webp
+    - assets/images/German-Potato-Pancakes.webp
+    - assets/images/sauerbraten.webp
+    - assets/images/rinderrouladen.webp
+    - assets/images/air-fryer-hot-dogs.webp
+    - assets/images/EasyBakedChikenTenders.webp
+    - assets/images/egg-salad-toast.webp
+    - assets/images/halloumi-salad.webp
+    - assets/images/shrimp-lo-mein.webp
+    - assets/images/cheese-sandwich.webp
+    - assets/images/lasagna-soup.jpg
+    - assets/images/crispy-chicken-thighs.jpg
+    - assets/images/salmon-pasta-salad.jpg
+    - assets/images/Shrimp-Burger.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
